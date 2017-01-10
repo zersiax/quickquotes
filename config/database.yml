@@ -1,0 +1,20 @@
+  default: &default
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
+    username: postgres
+    password: password
+    host: localhost
+
+
+  development:
+    <<: *default
+    database: splurty_development
+
+  test:
+    <<: *default
+    database: splurty_test
+
+  production:
+    <<: *default
+    database: splurty_production

@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 .clear {
-clear: both;}
+clear: both;
 }
 .circle {
     font-weight:bold;
@@ -32,14 +32,30 @@ clear: both;}
 .links {
   padding-top:26px;
 }
+
 .links a {
   color:black;
   font-size: 25px;
     border-bottom: 1px solid #dfdfdf;
+	font-family: 'great_vibesregular', sans-serif;;
+	font-weight: bold;
 }
+
 header {
   border-top: 9px solid #222222;
 }
+
 hr {
-  clear:both;
+  clear: both;
+}
+
+h1 {
+font-family: 'great_vibesregular', sans-serif;;
+font-weight: bold;
+font-size: 48px;
+}
+
+h2 {
+font-family: 'great_vibesregular', sans-serif;;
+
 }

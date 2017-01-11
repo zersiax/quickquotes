@@ -30,8 +30,23 @@ Quoting the RocketPower Hawaiian Ancients quotes you love at you whenever you ne
 </header>
 <hr />
 <br class="clear" />
-  
+  <div class='container'>
 <%= yield %>
+</div>
+<div class='footer'>
+<div class='container'>
+      <div class="col-xs-6">
+        <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+      </div>
+      <div class="col-xs-6 footer-blurp">
+        Made from a random couch in a random living room,by Florian Beijers.
+		<br />
+        Guidance from <a href="www.thefirehoseproject.com">The Firehose Project</a>
+		
+      </div>
+</div>
+</div>
+
 
 </body>
 </html>

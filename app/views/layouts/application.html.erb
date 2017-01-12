@@ -21,12 +21,13 @@
       </div>
 	  <% end %>
 </div>
-<div class="col-xs-4 slogan">
+<div class="col-xs-4 slogan hidden-xs">
 Quoting the RocketPower Hawaiian Ancients quotes you love at you whenever you need your daily dose of philosophy
 
 </div>
     <div class="col-xs-5 links">
             <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+			      &nbsp;&nbsp;
       <%= link_to 'About', about_path %>
     </div>
 </header>
@@ -42,8 +43,10 @@ Quoting the RocketPower Hawaiian Ancients quotes you love at you whenever you ne
         </div>
         <div class="modal-body">
           <%= simple_form_for Quote.new do |f| %>
-<%= f.input :saying %>
-<%= f.input :author %>
+<%= f.input :saying, label: "What is the saying you want to add?" placeholder: "Woof!" %>
+            <br />
+			
+            <%= f.input :author, label: "Who is the author of the quote?", placeholder: "Any random dog" %>
 
 
 
@@ -71,10 +74,10 @@ Quoting the RocketPower Hawaiian Ancients quotes you love at you whenever you ne
 </div>
 <div class='footer'>
 <div class='container'>
-      <div class="col-xs-6">
+            <div class="col-xs-12 col-sm-6">
 <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
       </div>
-      <div class="col-xs-6 footer-blurp">
+            <div class="col-xs-12 col-sm-6 footer-blurb">
         Made from a random couch in a random living room,by Florian Beijers.
 		<br />
         Guidance from <a href="www.thefirehoseproject.com">The Firehose Project</a>

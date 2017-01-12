@@ -8,8 +8,9 @@
 </head>
 <body>
 <header>
-</header>
+
 <div class="col-xs-3">
+      <%= link_to root_path, class: 'logo'  do %>
       <div class="circle">
         <br />
         Don't Panic
@@ -18,13 +19,14 @@
         <br />
         So long
       </div>
+	  <% end %>
 </div>
 <div class="col-xs-4 slogan">
 Quoting the RocketPower Hawaiian Ancients quotes you love at you whenever you need your daily dose of philosophy
 
 </div>
     <div class="col-xs-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
     </div>
 </header>
@@ -36,7 +38,7 @@ Quoting the RocketPower Hawaiian Ancients quotes you love at you whenever you ne
 <div class='footer'>
 <div class='container'>
       <div class="col-xs-6">
-        <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+<%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
       </div>
       <div class="col-xs-6 footer-blurp">
         Made from a random couch in a random living room,by Florian Beijers.

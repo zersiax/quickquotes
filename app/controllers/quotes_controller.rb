@@ -7,7 +7,10 @@ def new
 end
 
 def create
-Quote.create(quote_params)
+@quote = Quote.create(quote_params)
+if @quote.invalid?
+  flash[:error] = "<strong>Not today, pal</strong>The data you entered made a lot of people very angry. Please try again."
+end  
 redirect_to root_path
 end
 
